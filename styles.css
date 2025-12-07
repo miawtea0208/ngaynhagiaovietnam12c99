@@ -1,0 +1,117 @@
+/* styles.css - thay đè toàn bộ file bằng đoạn này */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/1200x/78/ab/f6/78abf60c65b1dcaceb6957025d3b4eb4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+}
+img {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* khung chính */
+.box {
+  background: white;
+  width: 340px;
+  max-width: 90%;
+  padding: 26px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* hiển thị/ẩn trang */
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+}
+
+/* tiêu đề */
+h2 {
+  font-size: 22px;
+  color: #e84a98;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* mota */
+p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* tên tv) */
+#p3 p,
+#p3 ul,
+#p3 li {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  color: #e46398;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+ul li {
+  margin: 6px 0;
+}
+
+/* nút */
+button {
+  margin-top: 14px;
+  padding: 10px 24px;
+  border-radius: 24px;
+  border: none;
+  background: #ff89b3;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.small-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 420px) {
+  .box {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #p3 p,
+  ul li {
+    font-size: 15px;
+  }
+}

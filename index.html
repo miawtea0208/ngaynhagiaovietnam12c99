@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web 20/11</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <head>
+      <style>
+        body {
+          background: pink;
+          font-family: Arial;
+        }
+    
+        .box {
+          background: white;
+          width: 350px;
+          padding: 20px;
+        }
+      </style>
+    </head>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- TRANG 1 -->
+    <div class="box page" id="p1" style="display: block">
+      <h2>Nhóm em xin chào cô Vĩ &lt;3</h2>
+      <button onclick="show2()">Hii</button>
+    </div>
+
+    <!-- TRANG 2 -->
+    <div class="box page" id="p2">
+      <h2>Chúc mừng 20-11</h2>
+    
+      <p>Chúng em kính chúc cô luôn mạnh khỏe,</p>
+    
+      <img
+        src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/586419759_122268178862219803_4658144595001196568_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFYXLZKeUqEtVLX7xskqcfSMdMxeAkjK1Yx0zF4CSMrVoJv46lc_xUs-GoKoUYMx8B5E3L39iUELrVabY5ptmrn&_nc_ohc=uQKIsiT9C0sQ7kNvwEgXlWY&_nc_oc=Admx9CGUWynAXhH-Y_tmlrUR0Uh2F3QVHkv6Yv2ObSCVlv_9MoLrW7SM9H-kAtx45sQFpNIv0pTGImHfKG2nicsD&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=SCWcltAjQl5nRbyHvEQxdQ&oh=00_AfkGvAbprSJXa5T0OwM1NZSmOSl8SdnOEPXz377sfoZQTQ&oe=693B68E1"
+      />
+    
+      <p>
+        hạnh phúc và thành công trong nghề 💖
+      </p>
+    
+      <button onclick="show3()">TIẾP!!</button>
+    </div>
+    
+    <!-- TRANG 3 -->
+    <div class="box page" id="p3">
+      <h2>Danh sách thành viên</h2>
+      <p>
+        Cát Linh<br />
+        Anh Thư<br />
+        Tân<br />
+        Hằng<br />
+        Hiền<br />
+        Tâm<br />
+        Dũng<br />
+        Quảng
+      </p>
+
+      <p>💐 Thanks💐</p>
+      <button onclick="goHome()">turn back</button>
+    </div>
+
+    <script>
+      function show2() {
+        p1.style.display = "none";
+        p2.style.display = "block";
+      }
+
+      function show3() {
+        p2.style.display = "none";
+        p3.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
